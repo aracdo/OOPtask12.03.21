@@ -26,9 +26,10 @@ namespace OOPtest
     }
     class Asperant: Student
     {
-        public Asperant(string firstName, string lastName, string group, double averageMark) : base (firstName, lastName, group, averageMark)
+        privat sinceWork
+        public Asperant(string firstName, string lastName, string group, double averageMark, string sinceWork) : base (firstName, lastName, group, averageMark)
         {
-
+            this.sinceWork = sinceWork
         }
         public override int getScholarship()
         {
@@ -45,9 +46,9 @@ namespace OOPtest
             Student task1 = new Asperant("Ahmed","Muhamed","inf",4.3);
 
             List<Student> task2 = new List<Student>();
-            task2.Add(new Asperant("sasa", "sasas", "sas", 2));
+            task2.Add(new Asperant("sasa", "sasas", "sas", "ssss", 2));
             task2.Add(new Student("sssa", "sffas", "sas", 5));
-            task2.Add(new Asperant("sayysa", "sffas", "sas", 5));
+            task2.Add(new Asperant("sayysa", "sffas", "sas", "ssss", 5));
             
 
            for (int i = 0; i< task2.Count; i++)
