@@ -12,6 +12,10 @@ namespace OOPtest
         }
         public abstract Book getBook();
         public abstract string getTitle();
+        public void toString()
+        {
+            Console.WriteLine(getTitle() + " " + author);
+        }
     }
 
     class MarkTwenBook : Book
@@ -21,13 +25,8 @@ namespace OOPtest
         {
             this.title = title;
         }
-        public void toString()
-        {
-            Console.WriteLine(title+" "+author );
-        }
         public override string getTitle()
         {
-            Console.WriteLine(title);
             return title;
         }
         public override Book getBook()
@@ -43,13 +42,8 @@ namespace OOPtest
         {
             this.title = title;
         }
-        public void toString()
-        {
-            Console.WriteLine(title + " " + author);
-        }
         public override string getTitle()
         {
-            Console.WriteLine(title);
             return title;
         }
         public override Book getBook()
